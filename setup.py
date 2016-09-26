@@ -1,6 +1,6 @@
 from distutils.core import setup
 
-__version__ = '0.1.3'
+__version__ = '0.1.5'
 
 with open('README.rst') as f:
     long_description = f.read()
