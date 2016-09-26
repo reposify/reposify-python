@@ -1,0 +1,7 @@
+include *.md
+include *.rst
+include *.txt
+include MANIFEST.in
+recursive-include tests *.json
+recursive-include tests *.py
+recursive-include tests *.txt
