@@ -1,5 +1,5 @@
 # About
-This is the Python client library for Reposify API. To get started, please see the [full documentation for this library](http://reposify.com/docs/api/python).
+This is the Python client library for Reposify API. To get started, please see the [full documentation for this library](https://docs.reposify.com/?python).
 
 Python 2.6+ and 3.3+ are fully supported.
 
