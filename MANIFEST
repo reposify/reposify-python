@@ -14,3 +14,6 @@ tests/test_requirements.txt
 tests/mock_get_responses/account_status.json
 tests/mock_get_responses/insights_count.json
 tests/mock_get_responses/insights_search.json
+tests/mock_get_responses/scan_host.json
+tests/mock_get_responses/scan_internet.json
+tests/mock_get_responses/scan_status.json
