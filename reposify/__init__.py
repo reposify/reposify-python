@@ -1,6 +1,6 @@
 import requests
 import reposify.exceptions
-
+from json import dumps
 
 class Base(object):
     base_url = 'https://api.reposify.com'
@@ -114,16 +114,15 @@ class Discovery(Base):
     """
     endpoint_name = 'scan'
 
-    def host(self, port=None, protocol=None, ip_addresses=None):
+    def host(self, ip_addresses=None, arguments=None):
         endpoint_action = 'host'
         post_data = {}
 
-        if protocol:
-            post_data.update({'protocol': protocol})
-        if port:
-            post_data.update({'port': port})
         if ip_addresses:
             post_data.update({'ips': ip_addresses})
+        if arguments:
+            post_data.update({'arguments': dumps(arguments)})
+
         response = self.request(endpoint_name=self.endpoint_name,
                                 endpoint_action=endpoint_action,
                                 method='post',
